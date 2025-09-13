@@ -4,7 +4,7 @@ conn=sqlite3.connect('test.db')
 cursor=conn.cursor()
 cursor.execute('CREATE TABLE IF NOT EXISTS students (id INT, surname TEXT, name TEXT,'
                'birthday INT, gendor TEXT, faculty TEXT)')
-#
+
 # cursor.execute("INSERT INTO students (id, surname, name,"
 #                "birthday, gendor, faculty) VALUES ( 0, 'Ismoil', 'BF')")
 # cursor.execute("INSERT INTO students (id, surname, name,"
@@ -35,5 +35,5 @@ for row in rows:
 #
 
 conn.commit()
-
+print('hello')
 
